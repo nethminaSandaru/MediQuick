@@ -1,0 +1,89 @@
+MEDIQUICK PHARMACY SYSTEM
+SYSTEM WORKING EXPLANATION
+
+1. SYSTEM INTRODUCTION
+
+MediQuick Pharmacy is a web-based online pharmacy management and shopping system developed using PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, and XAMPP. The system allows customers to browse available pharmacy products, search for medicines, view product details, add eligible products to a shopping cart, upload prescriptions, track orders, provide feedback, and contact the pharmacy. The system also provides information about MediQuick Pharmacy branches located in different areas.
+
+2. HOME PAGE
+
+The Home page is the main entry point of the system. It introduces MediQuick Pharmacy and provides navigation to the major sections of the website. Customers can access medicines, categories, prescription upload, order tracking, branches, contact information, and their account from the main navigation menu.
+
+3. PRODUCT AND MEDICINE MANAGEMENT
+
+The Products page displays pharmacy products stored in the MySQL database. Each product contains information such as product name, category, price, available stock quantity, description, dosage, safety information, prescription requirement, and product image.
+
+Customers can search products by name, description, or category. Products can also be filtered according to available categories such as Prescription Medicines, OTC Medicines, Wellness, Personal Care, Medical Devices, First Aid, and Baby Care.
+
+4. PRODUCT DETAILS
+
+When a customer selects a product, the system displays the complete product information. The product detail page shows the product image, name, category, price, stock availability, description, dosage, safety information, and prescription requirement.
+
+This allows customers to understand the product before adding it to the shopping cart.
+
+5. SHOPPING CART
+
+The shopping cart uses PHP sessions to temporarily store selected products. When a customer clicks the Add to Cart button, the system checks the selected product from the database.
+
+The system checks whether the product is in stock and whether it requires a prescription. Prescription-required products are prevented from being added through the normal shopping cart process.
+
+The requested quantity is also checked against the available stock quantity. If the requested quantity is greater than the available stock, the system limits the quantity to the available stock.
+
+6. CHECKOUT AND ORDER PROCESS
+
+After selecting products, customers can open the shopping cart and review their selected items. The cart displays product names, quantities, prices, and the total amount.
+
+Customers can proceed to checkout and provide the required order and customer information. The system processes the order using PHP and MySQL and stores the necessary information in the database.
+
+7. PRESCRIPTION UPLOAD
+
+The system provides an Upload Prescription feature for customers who need to submit prescription information. This allows the pharmacy system to receive prescription-related documents for medicines that require professional approval.
+
+8. ORDER TRACKING
+
+The Track Order feature allows customers to check the progress of their orders. Order information is retrieved from the database and displayed according to the current order status.
+
+9. USER ACCOUNT
+
+Customers can register for an account and log in to the system. Logged-in users can access their account-related information and use customer features provided by the system.
+
+10. BRANCHES
+
+The Branches page introduces MediQuick Pharmacy and displays eight pharmacy branches located in different parts of Sri Lanka. Each branch has its own local pharmacy image, location, description, opening hours, and industry experience information.
+
+The eight branch images are stored locally inside the assets/images/pharmacy folder. Each branch is connected to a different image file.
+
+11. HEADER AND FOOTER
+
+The common Header provides navigation links, MediQuick branding, theme controls, digital clock, cart information, and account options.
+
+The Footer provides company information, quick links, account links, contact information, social media links, privacy policy, terms and conditions, and feedback links.
+
+12. DATABASE
+
+MySQL is used as the main database management system. Product, customer, order, and other system information is stored in database tables. PHP connects the website to MySQL using the project's database configuration file.
+
+13. FRONT-END DESIGN
+
+HTML is used to create the structure of the pages. CSS is used for layout, colors, responsive design, animations, cards, buttons, navigation, and dark mode. Bootstrap Icons are used for interface icons. JavaScript is used for interactive functions such as the digital clock, theme switching, and other client-side features.
+
+14. SECURITY AND VALIDATION
+
+The system validates important user inputs before processing them. Database queries are used to retrieve and manage system information. Session management is used for shopping cart and login-related functionality.
+
+15. OVERALL SYSTEM FLOW
+
+The overall system works as follows:
+
+Customer visits the MediQuick Pharmacy website.
+Customer browses or searches for products.
+Customer opens a product and checks its information.
+Customer adds eligible products to the shopping cart.
+The system checks stock and prescription requirements.
+Customer reviews the cart.
+Customer proceeds to checkout.
+The system processes and stores the order information.
+Customer can track the order.
+Customers can also upload prescriptions, view branches, provide feedback, and contact the pharmacy.
+
+Therefore, MediQuick Pharmacy provides an integrated online pharmacy platform that combines product browsing, shopping cart functionality, customer management, prescription handling, order processing, branch information, and customer support in one web-based system.
