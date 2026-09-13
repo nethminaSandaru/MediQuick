@@ -10,9 +10,7 @@ INSTALLATION
 5. Import database.sql.
 6. Open http://localhost/MediQuick_Pharmacy/
 
-ADMIN LOGIN
-Email: admin@mediquick.lk
-Password: Admin@123
+
 
 IMPORTANT
 This is an academic/demo application. Payment is simulated and no real card data is collected.
